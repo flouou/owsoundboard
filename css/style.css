@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'overwatch';
+  src: url("../fonts/big_noodle_titling.ttf") format("truetype"); }
+#bastion {
+  background-image: url("../heroes/bastion.png"); }
+
+#diva {
+  background-image: url("../heroes/diva.png"); }
+
+#genji {
+  background-image: url("../heroes/genji.png"); }
+
+#hanzo {
+  background-image: url("../heroes/hanzo.png"); }
+
+#junkrat {
+  background-image: url("../heroes/junkrat.png"); }
+
+#lucio {
+  background-image: url("../heroes/lucio.png"); }
+
+#mccree {
+  background-image: url("../heroes/mccree.png"); }
+
+#mei {
+  background-image: url("../heroes/mei.png"); }
+
+#mercy {
+  background-image: url("../heroes/mercy.png"); }
+
+#pharah {
+  background-image: url("../heroes/pharah.png"); }
+
+#reaper {
+  background-image: url("../heroes/reaper.png"); }
+
+#reinhardt {
+  background-image: url("../heroes/reinhardt.png"); }
+
+#roadhog {
+  background-image: url("../heroes/roadhog.png"); }
+
+#soldier_76 {
+  background-image: url("../heroes/soldier_76.png"); }
+
+#symmetra {
+  background-image: url("../heroes/symmetra.png"); }
+
+#torbjoern {
+  background-image: url("../heroes/torbjoern.png"); }
+
+#tracer {
+  background-image: url("../heroes/tracer.png"); }
+
+#widowmaker {
+  background-image: url("../heroes/widowmaker.png"); }
+
+#winston {
+  background-image: url("../heroes/winston.png"); }
+
+#zarya {
+  background-image: url("../heroes/zarya.png"); }
+
+#zenyatta {
+  background-image: url("../heroes/zenyatta.png"); }
+
+body {
+  background-color: #ecf0f1; }
+  body nav {
+    height: 100px;
+    width: 100%;
+    background-color: #dee0e0;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    body nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      body nav ul li {
+        float: right; }
+        body nav ul li a {
+          display: block;
+          text-align: center;
+          padding: 35px 20px;
+          text-decoration: none;
+          font-family: overwatch;
+          font-style: italic;
+          font-size: 30px;
+          text-decoration: none;
+          color: #ecf0f1; }
+          body nav ul li a:hover {
+            color: black; }
+  body .container {
+    width: 80%;
+    background-color: #dee0e0;
+    margin: 5px auto;
+    padding: 5px 20px;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    body .container .hero-portrait {
+      position: relative;
+      display: inline-block;
+      width: 180px;
+      height: 310px;
+      background-color: #ecf0f1;
+      border: 7px solid #ecf0f1;
+      margin: 5px;
+      vertical-align: bottom;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+      body .container .hero-portrait:hover {
+        border: 4px solid #ecf0f1; }
+      body .container .hero-portrait .name {
+        height: 50px;
+        font-size: 30px;
+        font-family: overwatch;
+        font-style: italic;
+        color: #ecf0f1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        text-align: center;
+        padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
