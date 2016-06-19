@@ -120,12 +120,18 @@ table {
 body {
   background-color: #ecf0f1; }
   body nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
     height: 100px;
     width: 100%;
     background-color: #dee0e0;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    @media (min-width: 1px) and (max-width: 768px) {
+      body nav {
+        height: 60px; } }
     body nav ul {
       list-style-type: none;
       margin: 0;
@@ -134,7 +140,6 @@ body {
         float: right; }
         body nav ul li a {
           display: block;
-          text-align: center;
           padding: 35px 20px;
           text-decoration: none;
           font-family: overwatch;
@@ -142,9 +147,16 @@ body {
           font-size: 30px;
           text-decoration: none;
           color: #ecf0f1; }
+          @media (min-width: 1px) and (max-width: 768px) {
+            body nav ul li a {
+              font-size: 25px;
+              padding: 17px 20px; } }
           body nav ul li a:hover {
-            color: black; }
+            color: black;
+            cursor: pointer; }
   body .container {
+    position: relative;
+    top: 105px;
     width: 80%;
     background-color: #dee0e0;
     margin: 5px auto;
@@ -153,6 +165,10 @@ body {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    @media (min-width: 1px) and (max-width: 768px) {
+      body .container {
+        width: 97%;
+        top: 65px; } }
     body .container .hero-portrait {
       position: relative;
       display: inline-block;
@@ -170,7 +186,13 @@ body {
       -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+      @media (min-width: 1px) and (max-width: 768px) {
+        body .container .hero-portrait {
+          width: 123px;
+          height: 230px;
+          background-size: cover; } }
       body .container .hero-portrait:hover {
+        cursor: pointer;
         border: 4px solid #ecf0f1; }
       body .container .hero-portrait .name {
         height: 50px;
@@ -185,6 +207,11 @@ body {
         background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
         text-align: center;
-        padding: 10px; }
+        padding: 10px;
+        cursor: pointer; }
+        @media (min-width: 1px) and (max-width: 768px) {
+          body .container .hero-portrait .name {
+            font-size: 20px;
+            height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

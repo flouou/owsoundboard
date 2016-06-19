@@ -8,10 +8,16 @@ body{
     background-color: $cloudColor;
 
     nav{
+        z-index: 1000;
+        position:fixed;
+        top: 0;
         height:100px;
         width:100%;
         background-color:$silverColor;
         @include box-shadow($youtubeShadow);
+        @media (min-width: 1px) and (max-width: $upperPhone){
+            height:60px;
+        }
         
         ul{
             list-style-type: none;
@@ -20,10 +26,9 @@ body{
 
             li{
                 float: right;
-
+                
                 a{
                     display: block;
-                    text-align: center;
                     padding: 35px 20px;
                     text-decoration: none;
                     font-family: overwatch;
@@ -31,15 +36,22 @@ body{
                     font-size: 30px;
                     text-decoration:none;
                     color:$cloudColor;
+                    @media (min-width: 1px) and (max-width: $upperPhone){
+                        font-size:25px;
+                        padding: 17px 20px;
+                    }
 
                     &:hover{
                         color: black;
+                        cursor: pointer;
                     }
                 }
             }
         }
     }
     .container{
+        position:relative;
+        top: 105px;
         width:80%;
         background-color: $silverColor;
         margin: 5px auto;
@@ -47,7 +59,8 @@ body{
         text-align: center;
         @include box-shadow($youtubeShadow);
         @media (min-width: 1px) and (max-width: $upperPhone){
-            
+            width:97%;
+            top:65px;
         }
         @media (min-width: $upperPhone+1px) and (max-width: $upperTablet){
             
@@ -67,8 +80,14 @@ body{
             vertical-align: bottom;
             @include transition(all .2s ease);
             @include box-shadow($youtubeShadow);
+            @media (min-width: 1px) and (max-width: $upperPhone){
+                width:123px;
+                height:230px;
+                background-size:cover;
+            }
 
             &:hover{
+                cursor: pointer;
                 border: 4px solid $cloudColor;
             }
 
@@ -86,6 +105,11 @@ body{
                 width: 100%;
                 text-align: center;
                 padding:10px;
+                cursor: pointer;
+                @media (min-width: 1px) and (max-width: $upperPhone){
+                    font-size:20px;
+                    height:40px;
+                }
             }
         }
     }
