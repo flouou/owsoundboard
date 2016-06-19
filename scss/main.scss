@@ -46,6 +46,15 @@ body{
         padding: 5px 20px;
         text-align: center;
         @include box-shadow($youtubeShadow);
+        @media (min-width: 1px) and (max-width: $upperPhone){
+            
+        }
+        @media (min-width: $upperPhone+1px) and (max-width: $upperTablet){
+            
+        }
+        @media (min-width: $upperTablet+1px) and (max-width: $mediumDesktops){
+            
+        }
 
         .hero-portrait{
             position:relative;
