@@ -1,0 +1,6 @@
+php backend
+	-generieren der helden auf der startseite
+	-generieren der heldenseite mit allen sounds
+
+frontend
+	-farbgebung überarbeiten (evtl genauer ans overwatch theme, anthrazit + orange)
